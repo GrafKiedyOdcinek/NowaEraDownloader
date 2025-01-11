@@ -26,6 +26,7 @@ How it Works:
  * It extracts the book content from the provided URL.
  * It downloads all book pages as images and saves them in a folder named after the book title.
  * It creates a PDF file containing all the downloaded images, also named after the book title.
+
 Disclaimer:
 This script is intended for educational purposes only. It's recommended to respect the website's terms of service and copyright restrictions.
 
