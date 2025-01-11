@@ -8,7 +8,8 @@ This script is designed to download books from Nowa Era's flipbook platform.
 * Libraries: `requests`, `os`, `img2pdf`
 
   You can install them using pip:
-  pip install requests img2pdf
+  
+  `pip install requests img2pdf`
 
 Installation:
  * Clone this repository using git:
