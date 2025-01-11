@@ -20,7 +20,7 @@ Usage:
  * Navigate to the downloaded directory in your terminal.
  * Run the script:
 
-`python3 NowaEraDownloader.py`
+   `python3 NowaEraDownloader.py`
 
 How it Works:
  * The script prompts you for the book link.
