@@ -1,4 +1,4 @@
-import import requests
+import requests
 import os
 import img2pdf
 
