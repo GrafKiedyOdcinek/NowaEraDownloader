@@ -13,7 +13,8 @@ This script is designed to download books from Nowa Era's flipbook platform.
 
 Installation:
  * Clone this repository using git:
-git clone [https://github.com/GrafKiedyOdcinek/NowaEraDownloader](https://github.com/GrafKiedyOdcinek/NowaEraDownloader)
+
+`git clone https://github.com/GrafKiedyOdcinek/NowaEraDownloader`
 
 Usage:
  * Navigate to the downloaded directory in your terminal.
