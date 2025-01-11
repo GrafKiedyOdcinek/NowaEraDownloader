@@ -1,23 +1,34 @@
-# fliphtml5Downloader
-This Downloads books from fliphtml5
+# Nowa Era Book Downloader
 
-First download, or clone by git clone https://github.com/EngrMoazDev/fliphtml5Downloader
+This script is designed to download books from Nowa Era's flipbook platform.
 
-Packages requests, os and img2pdf are required to run this script. 
-You can install them with pip like pip install requests, pip install img2pdf, etc.
+**Prerequisites:**
 
-After that in you can run the script in the terminal or by double clicking it.
+* Python 3 (https://www.python.org/downloads/)
+* Libraries: `requests`, `os`, `img2pdf`
 
-To run in terminal, do the following
-python3 fliphtml5Downloader.py
+  You can install them using pip:
+  pip install requests img2pdf
 
-Book Link is the pair of codes which yo can locate in the URL. For example, book name in the url https://fliphtml5.com/hgzok/boba is hgzok/boba.
+Installation:
+ * Clone this repository using git:
+git clone [https://github.com/GrafKiedyOdcinek/NowaEraDownloader](https://github.com/GrafKiedyOdcinek/NowaEraDownloader)
 
-It will make a folder with the title of book, and place all the images in that folder, and it will make pdf in the folder where your script is located.
+Usage:
+ * Navigate to the downloaded directory in your terminal.
+ * Run the script:
+python3 NowaEraDownloader.py
 
-The name of pdf is the title of the book.
-
-A Brief Tutorial can be watched at: https://youtu.be/RNzS0H2hspA
-
-# Warning
-This is only for educational purposes. It's the very basic version to download. You are free to add more stuff like threading, headers etc in this to speed up or to deal with browser requirements.
+How it Works:
+ * The script prompts you for the book link.
+ * It extracts the book content from the provided URL.
+ * It downloads all book pages as images and saves them in a folder named after the book title.
+ * It creates a PDF file containing all the downloaded images, also named after the book title.
+Disclaimer:
+This script is intended for educational purposes only. It's recommended to respect the website's terms of service and copyright restrictions.
+Further Enhancements:
+Feel free to modify the script to:
+ * Implement multithreading for faster downloads.
+ * Add custom headers to mimic browser behavior.
+Original fliphtml5Downloader Script:
+This script was originally designed for downloading books from the fliphtml5 platform. You can find the original script and its documentation here: https://github.com/EngrMoazDev/fliphtml5Downloader
