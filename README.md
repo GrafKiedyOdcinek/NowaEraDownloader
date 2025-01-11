@@ -28,9 +28,6 @@ How it Works:
  * It creates a PDF file containing all the downloaded images, also named after the book title.
 Disclaimer:
 This script is intended for educational purposes only. It's recommended to respect the website's terms of service and copyright restrictions.
-Further Enhancements:
-Feel free to modify the script to:
- * Implement multithreading for faster downloads.
- * Add custom headers to mimic browser behavior.
+
 Original fliphtml5Downloader Script:
 This script was originally designed for downloading books from the fliphtml5 platform. You can find the original script and its documentation here: https://github.com/EngrMoazDev/fliphtml5Downloader
