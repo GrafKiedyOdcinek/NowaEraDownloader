@@ -1,15 +1,15 @@
-import requests
+import import requests
 import os
 import img2pdf
 
 # Taking Book reference/link from user
 book_link = input("Enter the book link: ")
 
-# Ensure the link ends correctly
-url = book_link.split('index.html')[0]
+# Ensure the link ends correctly (assuming the link points to the flipbook's main page)
+url = book_link.rstrip("/")
 
-# URL of the config file
-config_file_url = f'{url}mobile/javascript/config.js'
+# **Correctly encode the URL to handle special characters**
+config_file_url = f"{url}/mobile/javascript/config.js"
 
 try:
     # Request to get the config file
@@ -18,7 +18,11 @@ try:
     config_file.raise_for_status()
     
     # Extract total pages from the config file
-    total_pages = int(config_file.text.split('bookConfig.totalPageCount=')[1].split(';')[0])
+    try:
+        total_pages = int(config_file.text.split('bookConfig.totalPageCount=')[1].split(';')[0])
+    except IndexError:
+        print("Couldn't find 'bookConfig.totalPageCount' in config file. Assuming single page.")
+        total_pages = 1
 
     os.makedirs('bookdownload', exist_ok=True)
 
